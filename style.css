@@ -1,0 +1,157 @@
+/* Import whimsical, playful fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Quicksand:wght@400;600&display=swap');
+
+/* Reset and Box Sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base Styles */
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #fdfaf5;
+  color: #ddae8c;
+  background-image: url('images/bg-image.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  font-weight: 600;
+}
+
+.navbar-brand {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fddf8e !important;
+  font-family: 'Chewy', cursive;
+}
+
+.nav-link {
+  color: #f8f1e5 !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #fddf8e !important;
+}
+
+/* Hero Section */
+#home {
+  background-color: rgba(78, 83, 69, 0.2);
+  border-radius: 12px;
+  backdrop-filter: blur(4px);
+  margin-top: 1rem;
+  padding: 2rem;
+  text-align: center;
+  font-family: 'Chewy', cursive;
+}
+
+#home img {
+  max-width: 100%;
+  height: auto;
+  max-height: 400px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+}
+
+/* Header */
+h1.display-4 {
+  color:  #e6cd8b ;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 5);
+  margin-bottom: 1rem;
+  font-family: 'Chewy', cursive;
+}
+
+/* Cards */
+.card {
+  border: 3px solid #b8946a;
+  border-radius: 15px;
+  background-color: #fff8f0;
+  box-shadow: 0 5px 20px rgba(110, 85, 64, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(110, 85, 64, 0.25);
+}
+
+.card img {
+  height: 380px;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom: 2px solid #b8946a;
+}
+
+/* Card Text */
+.card-title {
+  color: #5d3c1b;
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-family: 'Chewy', cursive;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #3e2a14;
+  line-height: 1.6;
+  font-family: 'Quicksand', sans-serif;
+}
+
+footer {
+  background-color: #3b2d26;
+  color: #fff0d9;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+footer .social-links i {
+  font-size: 1.6rem;
+  color: #fff0d9;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer .social-links i:hover {
+  color: #fcd29f;
+  transform: scale(1.2);
+}
+
+footer .social-links .list-inline-item {
+  margin: 0 0.6rem;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 767px) {
+  .card img {
+    max-height: 100%;
+  }
+
+  h1.display-4 {
+    font-size: 2rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.3rem;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  .card-text {
+    font-size: 0.95rem;
+  }
+}
